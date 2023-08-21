@@ -1,0 +1,976 @@
+@font-face {
+    font-family: "OpenSans-regular";
+    src: url("https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "OpenSans-regular";
+    src: url("https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff");
+    font-weight: bold;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.header {
+    background-image: url("../images/banner-bg.jpg");
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+
+.header::before {
+    content: '';
+    display: block;
+
+    position: absolute;
+    background-color: black;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    color: rgb(0, 0, 0);
+    opacity: 0.6;
+    z-index: 1;
+
+}
+
+.header-container {
+    margin: 0 auto;
+    max-width: 1200px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.header-logo {
+    width: 180px;
+    position: relative;
+    z-index: 2;
+    padding-top: 38px;
+}
+
+.header-menu-item {
+    padding-top: 48px;
+    display: inline-block;
+    font-family: "OpenSans-regular";
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 13px;
+    position: relative;
+    z-index: 2;
+}
+
+.header-menu-item:nth-child(n+2) {
+    margin-left: 40px;
+}
+
+.header-menu-link {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+}
+
+.header-menu-link:hover {
+    text-decoration: underline;
+    padding-bottom: 1px;
+    color: rgb(255, 255, 255);
+
+}
+
+h1 {
+    font-family: "OpenSans-regular";
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    margin-top: 138px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-size: 45px;
+    line-height: 74, 97px;
+    position: relative;
+    z-index: 2;
+    padding-bottom: 140px;
+}
+
+.trends {
+    width: 100%;
+}
+
+.trends-title {
+    font-family: "OpenSans-regular";
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+
+    margin: 65px 0px 45px 0px;
+
+}
+
+
+.trends-title::after {
+    content: "";
+    display: block;
+    width: 65px;
+    height: 3px;
+    margin: 15px auto 0;
+    background-color: rgba(181, 159, 91, 0.4);
+
+}
+
+.trends-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+}
+
+.trends-part-one {
+    background-image: url(../images/trend1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.trends-part-two {
+    background-image: url(../images/trend2.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.trends-part-three {
+    background-image: url(../images/trend3.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.trends-part-four {
+    background-image: url(../images/trend4.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+
+.trends-part-one::before {
+    content: '';
+    display: block;
+
+    position: absolute;
+    background-color: black;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    color: rgb(0, 0, 0);
+    opacity: 0.6;
+    z-index: 1;
+
+}
+
+.trends-part-two::before {
+    content: '';
+    display: block;
+
+    position: absolute;
+    background-color: black;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    color: rgb(0, 0, 0);
+    opacity: 0.6;
+    z-index: 1;
+
+}
+
+.trends-part-three::before {
+    content: '';
+    display: block;
+
+    position: absolute;
+    background-color: black;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    color: rgb(0, 0, 0);
+    opacity: 0.6;
+    z-index: 1;
+
+}
+
+.trends-part-four::before {
+    content: '';
+    display: block;
+
+    position: absolute;
+    background-color: black;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    color: rgb(0, 0, 0);
+    opacity: 0.6;
+    z-index: 1;
+
+}
+
+
+.trends-item {
+    display: inline-block;
+    font-family: "OpenSans-regular";
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 13px;
+    position: relative;
+    z-index: 2;
+    text-decoration: none;
+}
+
+.trends-list {
+    display: flex;
+
+}
+
+.trends-link {
+    text-decoration: none;
+    color: rgb(181, 159, 91);
+    font-family: "OpenSans-regular";
+    font-weight: bold;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 15px;
+    list-style-type: none;
+    line-height: 22px;
+    margin-bottom: 15px;
+    margin-left: 19px;
+}
+
+.trends-link:hover {
+    text-decoration: underline;
+    color: rgb(181, 159, 91);
+}
+
+.trends-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid rgb(181, 159, 91);
+    padding: 35px 35px 35px 35px;
+    margin: 155px 25px 16px 25px;
+    z-index: 2;
+}
+
+.trends-discription {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: "OpenSans-regular";
+    font-weight: bold;
+    font-style: normal;
+    line-height: 23.99px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    z-index: 2;
+
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+.news {
+    max-width: 780px;
+    margin-right: 120px;
+}
+
+.card {
+    display: flex;
+    margin-top: 60px;
+
+    align-items: flex-start;
+}
+
+.news-picture {
+    width: 380px;
+
+    margin-right: 30px;
+
+}
+
+.card-content {
+    width: 370px;
+
+}
+
+.card-title {
+
+    display: flex;
+    font-family: "OpenSans-regular";
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 15px;
+    list-style-type: none;
+    line-height: 22px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+
+}
+
+.card-title-link {
+    text-decoration: none;
+    color: rgb(181, 159, 91);
+
+}
+
+.card-title-link:hover {
+    text-decoration: underline;
+    color: rgb(181, 159, 91);
+
+}
+
+.card-title li:nth-child(n+2) {
+    margin-left: 20px;
+}
+
+.card-description {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    font-family: "OpenSans-regular";
+    font-weight: bold;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+
+.card-description a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+
+}
+
+.card-description a:hover {
+    color: rgb(181, 159, 91);
+}
+
+
+.card-content time {
+    font-size: 12px;
+    font-family: "OpenSans-regular";
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(150, 150, 150);
+    margin-right: 15px;
+
+}
+
+.card-content cite {
+    font-family: "OpenSans-regular";
+    font-weight: bold;
+    font-style: normal;
+}
+
+.card-content p {
+    margin-top: 60px;
+    font-size: 15px;
+    font-family: "OpenSans-regular";
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(0, 0, 0);
+}
+
+
+.sidebar {
+    max-width: 290px;
+}
+
+.post-container {
+    margin-top: 60px;
+}
+
+
+
+.post-title {
+    margin-bottom: 40px;
+}
+
+.post-title::after {
+    content: "";
+    display: block;
+    width: 65px;
+    height: 3px;
+    margin: 15px auto 0;
+    background-color: rgba(181, 159, 91, 0.4);
+
+}
+
+.post-title-text {
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-family: "OpenSans-regular";
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+}
+
+.post {
+    display: flex;
+}
+
+.post img {
+    max-width: 70px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+.post time {
+    font-size: 12px;
+    font-family: "OpenSans-regular";
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(150, 150, 150);
+    margin-right: 15px;
+
+}
+
+.post-discription {
+    font-size: 14px;
+    line-height: 18px;
+    font-family: "OpenSans-regular";
+    font-weight: bold;
+    font-style: normal;
+    text-transform: uppercase;
+
+}
+
+.post-discription a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+
+}
+
+.post-discription a:hover {
+    text-decoration: none;
+    color: rgb(181, 159, 91);
+}
+
+.post-image {
+    margin-bottom: 20px;
+}
+
+.search {
+    margin-top: 60px;
+    display: flex;
+    justify-content: baseline;
+}
+
+
+
+.search-button {
+    width: 50px;
+    height: 50px;
+    padding: 1px;
+    background-color: rgb(181, 159, 91);
+    border: none;
+}
+
+.search-button:hover {
+    background-color: rgb(50, 50, 50);
+}
+
+.search-button-pic {
+    width: 20px;
+    margin: 0 auto;
+}
+
+.search-form {
+    width: 225px;
+    height: 50px;
+    background-color: rgb(244, 247, 246);
+    border: none;
+    padding-left: 18px;
+    outline-color: rgb(181, 159, 91);
+    outline-width: 0.5px;
+
+}
+
+.email-container {
+    margin-top: 25px;
+    margin: 0 auto;
+}
+
+.email-title {
+
+    margin-top: 60px;
+}
+
+.email-title-text {
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-family: "OpenSans-regular";
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+}
+
+
+.email-title::after {
+    content: "";
+    display: block;
+    width: 65px;
+    height: 3px;
+    margin: 15px auto 0;
+    background-color: rgba(181, 159, 91, 0.4);
+}
+
+.email-form {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    width: 270px;
+    height: 50px;
+    padding-left: 17px;
+    background-color: rgb(244, 247, 246);
+    border: none;
+    outline-color: none;
+    outline-color: rgb(181, 159, 91);
+}
+
+
+
+.email-button {
+    display: block;
+
+    width: 287px;
+    height: 50px;
+    background-color: rgb(181, 159, 91);
+    border: none;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-family: "OpenSans-regular";
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+}
+
+.tags-container {
+    margin: 0 auto;
+    margin-top: 60px;
+
+}
+
+.tags-name {
+    margin-top: 60px;
+}
+
+
+.tags-name::after {
+    content: "";
+    display: block;
+    width: 65px;
+    height: 3px;
+    margin: 15px auto 0;
+    background-color: rgba(181, 159, 91, 0.4);
+    margin-bottom: 24px;
+}
+
+.tags-title-text {
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-family: "OpenSans-regular";
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+}
+
+
+.tags-list {
+    flex-wrap: wrap;
+    display: flex;
+    gap: 7px;
+}
+
+
+
+.tags-item {
+
+    list-style-type: none;
+
+    font-family: "OpenSans-regular";
+    font-weight: bold;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 12px;
+    border: 3px solid rgb(237, 237, 237);
+    color: rgb(0, 0, 0);
+    padding: 8px 15px 7px 15px;
+
+
+}
+
+.tags-link {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.tags-item:hover {
+    text-decoration: none;
+    border: 3px solid#b59f5b;
+}
+
+
+.topics-name {
+    margin-top: 60px;
+}
+
+.topics-name::after {
+    content: "";
+    display: block;
+    width: 65px;
+    height: 3px;
+    margin: 15px auto 0;
+    background-color: rgba(181, 159, 91, 0.4);
+    margin-bottom: 24px;
+}
+
+.topics-title-text {
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-family: "OpenSans-regular";
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+}
+
+.tpics-list {
+    list-style-type: none;
+}
+
+.topics-item {
+    list-style-type: none;
+    font-family: "OpenSans-regular";
+    font-weight: bold;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 46px;
+    border-bottom: 1px solid rgb(238, 238, 238);
+
+}
+
+.topics-link {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+
+}
+
+.topics-link:hover {
+    text-decoration: none;
+    color: rgb(181, 159, 91);
+}
+
+.topics-index {
+    vertical-align: super;
+    margin-left: 7px;
+    color: rgb(181, 159, 91);
+    font-size: 12px;
+}
+
+.product {
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+.product-title {
+
+    font-family: "OpenSans-regular";
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+
+
+    margin: 65px 0px 45px 0px;
+
+}
+
+.product-title::after {
+    content: "";
+    display: block;
+    width: 65px;
+    height: 3px;
+    margin: 15px auto 0;
+    background-color: rgba(181, 159, 91, 0.4);
+
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    width: calc(100%/3);
+    align-items: center;
+}
+
+.product-card:nth-child(n+2) {
+    margin-left: 115px;
+}
+
+.product-pic {
+    width: 300px;
+    margin-bottom: -30px;
+}
+
+.product-card-content {
+    border: 3px solid rgb(181, 159, 91);
+    padding: 40px 40px 70px 40px;
+    flex-grow: 1;
+}
+
+.product-card-title {
+    font-family: "OpenSans-regular";
+    font-weight: bold;
+    font-style: normal;
+
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 25px 0px 15px 0px;
+}
+
+.product-card-description {
+    font-family: "OpenSans-regular";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 25px;
+}
+
+.product-card-link {
+    text-decoration: none;
+    color: rgb(181, 159, 91);
+}
+
+.product-card-link:hover {
+    text-decoration: underline;
+    color: rgb(181, 159, 91);
+}
+
+.product-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-card-price {
+    font-family: "OpenSans-regular";
+    font-weight: bold;
+    font-style: normal;
+
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.product-button {
+    display: block;
+    width: 140px;
+    padding: 20px 0px 20px 0px;
+    background-color: rgb(181, 159, 91);
+    border: none;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-family: "OpenSans-regular";
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+}
+
+.product-button:hover {
+    background-color: rgb(50, 50, 50);
+}
+
+
+.fake-price {
+    font-family: "OpenSans-regular";
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: line-through;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.footer-container {
+    margin: 60px auto;
+    width: 1200px;
+    height: 80px;
+    display: flex;
+    background-color: rgb(244, 247, 246);
+
+}
+
+
+.footer-list {
+    margin: 0 auto;
+    display: flex;
+    border: none;
+
+}
+
+.footer-item {
+    list-style-type: none;
+    display: flex;
+}
+
+
+.footer-link {
+    width: 18px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.footer-item:nth-child(n+2) {
+    margin-left: 30px;
+}
+
+.drible {
+
+    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/001-dribbble.svg");
+}
+
+.pinterest {
+    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/002-pinterest.svg");
+}
+
+.tumblr {
+    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/003-tumblr.svg");
+}
+
+.footer-creator {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.footer-creator-text-link {
+    font-size: 12px;
+    color: rgb(153, 153, 153);
+    font-family: "OpenSans-regular";
+    font-weight: bold;
+    font-style: normal;
+    padding-bottom: 40px;
+    text-decoration: none;
+}
+
+
+
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+@media (min-width: 641px) and (max-width: 1200px) {
+    .header-container {
+        max-width: 700px;
+
+    }
+
+    .header-menu-list {
+        display: none;
+    }
+
+    .trends-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 5px;
+    }
+
+    .container {
+        max-width: 700px;
+    }
+
+    .news {
+        max-width: 400px;
+        margin-right: 35px;
+
+    }
+
+    .card {
+        display: flex;
+        margin-top: 60px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .product {
+        width: 700px;
+
+    }
+
+    .product-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .footer-container {
+   
+        width: 700px;
+  
+    
+    }
+    
+}
+
+@media (max-width: 670px) {
+    .header-container {
+        max-width: 320px;
+
+    }
+
+}
